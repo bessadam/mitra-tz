@@ -1,0 +1,15 @@
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 5rem;
+  height: auto;
+  border-radius: .5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
