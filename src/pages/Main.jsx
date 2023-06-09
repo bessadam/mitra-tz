@@ -5,10 +5,10 @@ import { Container, Row } from "react-bootstrap";
 // components
 import Posts from "../components/Posts";
 import SearchField from "../components/SearchField";
+import PaginationField from "../components/PaginationField";
 // redux
 import { useSelector, useDispatch } from "react-redux";
 import { getPostPage } from "../redux/actions/posts";
-import PaginationField from "../components/PaginationField";
 // others
 import { postsInPageLimit } from "../assets/constants";
 
