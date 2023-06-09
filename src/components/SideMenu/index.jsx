@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./SideMenu.module.scss";
 // bootstrap
 import { Offcanvas, Image } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 // router
 import { Link } from "react-router-dom";
 // avatar

@@ -1,12 +1,22 @@
-import './App.css';
+import React from "react";
+import "./App.css";
 // components
-import Header from './components/Header';
+import Header from "./components/Header";
 // pages
 import { Main, About, User } from "./pages";
 // router
 import { Routes, Route } from "react-router-dom";
+// redux
+import { useDispatch } from "react-redux";
+import { getPostComments } from "./redux/actions/comments";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(getPostComments());
+  }, []);
+
   return (
     <div className="App">
       <Header />
@@ -17,6 +27,7 @@ const App = () => {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
+

@@ -2,7 +2,6 @@ import React from "react";
 import "../assets/styles/About.scss";
 // bootstrap
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 // db
 import { links } from "../assets/db/links";
 // avatar
