@@ -21,7 +21,7 @@ const Profile = ({ id }) => {
 
   React.useEffect(() => {
     dispatch(getUserProfile(id));
-  }, [id])
+  }, [id]);
 
   return (
     <>
@@ -31,7 +31,7 @@ const Profile = ({ id }) => {
             <Col md="9" lg="7" xl="5" className="mt-5">
               <Card>
                 <Card.Body className="p-4">
-                  <div className="d-flex text-black">
+                  <div className={styles.cardLayout}>
                     <div className="flex-shrink-0">
                       <Card.Img
                         className={styles.avatar}
