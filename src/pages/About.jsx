@@ -12,17 +12,17 @@ const About = () => {
     <Container>
       <Row className="justify-content-center">
         <Col className="mt-5">
-          <Card style={{ borderRadius: "15px" }}>
+          <Card className="cardItem">
             <Card.Body className="p-4">
-              <div className="d-flex text-black">
+              <div className="d-flex text-black cardLayout">
                 <div className="flex-shrink-0">
                   <Card.Img
-                    style={{ width: "240px", borderRadius: "10px" }}
+                    className="cardAvatar"
                     src={Avatar}
-                    alt="Generic placeholder image"
+                    alt="Avatar"
                   />
                   <Card.Text>
-                    <ul style={{ listStyle: "none", padding: 0 }}>
+                    <ul className="links-list">
                       {links.map((link) => {
                         return (
                           <li key={link.id}>
@@ -31,7 +31,7 @@ const About = () => {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              <b>{link.title}</b>
+                              <b><link.icon/> {link.title}</b>
                             </a>
                           </li>
                         );

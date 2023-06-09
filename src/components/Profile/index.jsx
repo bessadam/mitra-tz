@@ -36,7 +36,7 @@ const Profile = ({ id }) => {
                       <Card.Img
                         className={styles.avatar}
                         src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                        alt="Generic placeholder image"
+                        alt="Avatar"
                       />
                     </div>
                     <div className="flex-grow-1 ms-3">

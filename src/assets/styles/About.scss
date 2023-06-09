@@ -5,4 +5,29 @@
   margin-top: 2rem;
   border: 1px solid #eee;
   border-radius: .5rem;
+
+  .cardItem {
+    border-radius: 15px;
+  }
+}
+
+.links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cardAvatar {
+  max-width: 20rem; 
+  height: 20rem;
+  border-radius: 10px;
+}
+
+@media(max-width: 500px) {
+  .cardLayout {
+    flex-direction: column;
+  }
+
+  .cardAvatar {
+    max-width: 15rem;
+  }
 }
