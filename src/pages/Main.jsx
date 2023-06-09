@@ -27,7 +27,7 @@ const Main = () => {
       <Row>
         <Posts posts={posts} />
       </Row>
-      <PaginationField length={postsInPageLimit} />
+      {!!posts && <PaginationField length={postsInPageLimit} />}
     </Container>
   );
 };
